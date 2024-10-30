@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "webhook setting",
+  "description": "Webhook設定",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "endpoint": {
+      "type": "string",
+      "description": "Webhookのエンドポイント"
+    },
+    "is_valid": {
+      "type": "boolean",
+      "description": "URLが有効かどうか"
+    },
+    "active": {
+      "type": "boolean",
+      "description": "Webhookの有効状態"
+    }
+  }
+}

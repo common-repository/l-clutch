@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "uri action",
+  "description": "URIアクション",
+  "type": "object",
+  "allOf": [{ "$ref": "line-action-base.json" }],
+  "required": ["uri"],
+  "properties": {
+    "uri": {
+      "type": "string",
+      "format": "uri",
+      "description": "URI"
+    },
+    "alt_uri": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "type": "string",
+          "format": "uri",
+          "description": "デスクトップ用URI"
+        }
+      }
+    }
+  }
+}

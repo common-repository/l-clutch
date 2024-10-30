@@ -1,0 +1,30 @@
+.wp-block-l-clutch-profile-picture {
+  display: flex;
+
+  &.is-content-justification {
+    &-center {
+      justify-content: center;
+    }
+    &-left {
+      justify-content: left;
+    }
+    &-right {
+      justify-content: right;
+    }
+  }
+
+  img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+  }
+
+  & img {
+    border-radius: 9999px;
+    object-fit: cover;
+  }
+
+  &.is-style-square img {
+    border-radius: 0;
+  }
+}

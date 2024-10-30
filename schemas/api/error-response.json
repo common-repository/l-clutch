@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "error response",
+  "description": "エラーレスポンス",
+  "type": "object",
+  "required": ["code"],
+  "additionalProperties": false,
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "エラーコード"
+    },
+    "message": {
+      "type": "string",
+      "description": "エラーメッセージ"
+    },
+    "data": {
+      "type": "object",
+      "description": "エラーデータ"
+    }
+  }
+}

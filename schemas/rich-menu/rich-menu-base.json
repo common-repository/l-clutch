@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "rich menu base",
+  "description": "リッチメニューのベース",
+  "type": "object",
+  "required": ["name", "areas"],
+  "properties": {
+    "rich_menu_id": {
+      "type": "string",
+      "description": "リッチメニューID"
+    },
+    "rich_menu_alias_id": {
+      "type": "string",
+      "description": "リッチメニューエイリアスID"
+    },
+    "selected": {
+      "type": "boolean",
+      "description": "リッチメニューをデフォルトで表示するかどうか"
+    },
+    "name": {
+      "type": "string",
+      "description": "リッチメニューの名前",
+      "maxLength": 300
+    },
+    "chat_bar_text": {
+      "type": "string",
+      "description": "チャットバーに表示するテキスト",
+      "maxLength": 14
+    }
+  }
+}

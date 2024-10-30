@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "rich menu bounds",
+  "description": "リッチメニューのエリアの座標",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["x", "y", "width", "height"],
+  "properties": {
+    "x": {
+      "type": "integer",
+      "description": "x座標"
+    },
+    "y": {
+      "type": "integer",
+      "description": "y座標"
+    },
+    "width": {
+      "type": "integer",
+      "description": "幅"
+    },
+    "height": {
+      "type": "integer",
+      "description": "高さ"
+    }
+  }
+}

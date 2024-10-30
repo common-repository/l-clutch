@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "line action",
+  "description": "LINEアクション",
+  "type": "object",
+  "anyOf": [
+    { "$ref": "message-action.json" },
+    { "$ref": "postback-action.json" },
+    { "$ref": "rich-menu-switch-action.json" },
+    { "$ref": "uri-action.json" }
+  ]
+}

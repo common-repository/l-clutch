@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "rich menu dto",
+  "description": "リッチメニューDTO",
+  "type": "object",
+  "allOf": [{ "$ref": "rich-menu-base.json" }],
+  "additionalProperties": false,
+  "properties": {
+    "id": {},
+    "status": {},
+    "created_at": {},
+    "updated_at": {},
+    "rich_menu_id": {},
+    "rich_menu_alias_id": {},
+    "selected": {},
+    "name": {},
+    "chat_bar_text": {},
+    "size": {
+      "description": "リッチメニューのサイズ",
+      "type": "object"
+    },
+    "areas": {
+      "type": "array",
+      "description": "リッチメニューエリアの配列",
+      "maxItems": 20,
+      "items": {
+        "type": "object"
+      }
+    },
+    "background": {
+      "description": "リッチメニューの背景画像",
+      "type": "object"
+    },
+    "uploaded_background_hash": {
+      "type": "string",
+      "description": "リッチメニューの背景画像のハッシュ"
+    }
+  }
+}

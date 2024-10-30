@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "id object",
+  "type": "object",
+  "required": ["id"],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "ID"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "channel status",
+  "description": "チャネルのステータス",
+  "type": "object",
+  "required": ["is_valid"],
+  "additionalProperties": false,
+  "properties": {
+    "channel_id": {
+      "description": "チャンネルID",
+      "type": "string"
+    },
+    "is_valid": {
+      "description": "チャンネルが有効かどうか",
+      "type": "boolean"
+    }
+  }
+}

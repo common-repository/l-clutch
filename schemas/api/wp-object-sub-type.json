@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "wp object subtype",
+  "description": "WordPress オブジェクトサブタイプ",
+  "type": "string",
+  "enum": ["post", "page", "category", "post_tag"]
+}

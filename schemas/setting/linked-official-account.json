@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "linked official account",
+  "description": "リンク状況",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "is_linked": {
+      "description": "リンクされているか",
+      "type": "boolean"
+    }
+  }
+}

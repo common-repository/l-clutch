@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "line action base",
+  "description": "LINEアクションの基底スキーマ",
+  "type": "object",
+  "required": ["type"],
+  "properties": {
+    "type": {
+      "description": "アクションの種類",
+      "type": "string"
+    },
+    "label": {
+      "description": "アクションのラベル",
+      "type": "string"
+    }
+  }
+}

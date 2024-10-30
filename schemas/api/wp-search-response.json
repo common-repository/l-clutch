@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "search response",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "ID",
+      "type": "integer"
+    },
+    "title": {
+      "description": "タイトル",
+      "type": "string"
+    },
+    "url": {
+      "description": "URL",
+      "type": "string"
+    },
+    "type": {
+      "$ref": "wp-object-type.json"
+    },
+    "subType": {
+      "$ref": "wp-object-sub-type.json"
+    }
+  }
+}

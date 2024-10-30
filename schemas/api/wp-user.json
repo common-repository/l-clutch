@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "user",
+  "type": "object",
+  "required": ["id", "avatar_urls"],
+  "properties": {
+    "id": {
+      "description": "ユーザーID",
+      "type": "integer"
+    },
+    "avatar_urls": {
+      "description": "アバター画像のURL",
+      "type": "object",
+      "properties": {
+        "24": {
+          "description": "24x24の画像",
+          "type": "string"
+        },
+        "48": {
+          "description": "48x48の画像",
+          "type": "string"
+        },
+        "96": {
+          "description": "96x96の画像",
+          "type": "string"
+        }
+      }
+    },
+    "line_info": {
+      "$ref": "line-info.json"
+    }
+  }
+}

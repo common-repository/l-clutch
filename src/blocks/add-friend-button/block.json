@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "l-clutch/add-friend-button",
+  "version": "0.1.0",
+  "title": "友だち追加ボタン",
+  "category": "l-clutch",
+  "description": "友だち追加ボタンです。友だちに追加済みの場合は、表示されません。",
+  "attributes": {
+    "basicId": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string",
+      "default": "友だち追加",
+      "source": "html",
+      "selector": "span"
+    },
+    "imageId": {
+      "type": "number"
+    },
+    "imageUrl": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "img",
+      "attribute": "src"
+    },
+    "imageAlt": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "img",
+      "attribute": "alt"
+    },
+    "imageWidth": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "shadow": true,
+    "spacing": {
+      "margin": ["top", "bottom"]
+    },
+    "layout": {
+      "allowOrientation": false,
+      "allowVerticalAlignment": false,
+      "allowSwitching": false,
+      "allowInheriting": false,
+      "default": {
+        "type": "flex",
+        "justifyContent": "center"
+      }
+    },
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "example": {
+    "attributes": {
+      "text": "友だち追加"
+    }
+  },
+  "textdomain": "l-clutch",
+  "editorScript": "file:./index.js",
+  "editorStyle": ["l-clutch-block-editor"],
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

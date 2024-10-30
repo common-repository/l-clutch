@@ -1,0 +1,23 @@
+{
+  "name": "l-clutch/openapi",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daichi Yamauchi",
+      "email": "57288041+daichi-yamauchi@users.noreply.github.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "LClutch\\LineApi\\ChannelAccessToken\\": "output/channel-access-token/lib/",
+      "LClutch\\LineApi\\MessagingApi\\": "output/messaging-api/lib/"
+    }
+  },
+  "autoload-dev": {},
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

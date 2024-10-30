@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "check login url",
+  "description": "ログインURLにアクセスできるかどうか",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "can_access": {
+      "type": "boolean",
+      "description": "ログインURLにアクセスできるかどうか"
+    }
+  }
+}

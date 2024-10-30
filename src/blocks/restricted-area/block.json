@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "l-clutch/restricted-area",
+  "version": "0.1.0",
+  "title": "閲覧制限エリア",
+  "category": "l-clutch",
+  "description": "閲覧を制限します。",
+  "supports": {
+    "className": false,
+    "customClassName": false,
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "attributes": {
+    "readable": {
+      "type": "boolean",
+      "default": true
+    },
+    "readableRoles": {
+      "type": "array",
+      "default": ["administrator", "editor", "author", "contributor", "l-clutch_line-user"]
+    },
+    "readableLineUser": {
+      "type": "object",
+      "default": {
+        "addedFriend": "all"
+      }
+    }
+  },
+  "textdomain": "l-clutch",
+  "editorScript": "file:./index.js",
+  "editorStyle": ["file:./index.css", "l-clutch-block-editor"],
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

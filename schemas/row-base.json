@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "row base",
+  "description": "データベースの行の基本スキーマ",
+  "type": "object",
+  "required": ["status"],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "ID",
+      "minimum": 1
+    },
+    "status": {
+      "$ref": "status.json"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "作成日時"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "更新日時"
+    }
+  }
+}

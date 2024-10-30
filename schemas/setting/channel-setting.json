@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "channel setting",
+  "description": "チャンネル設定",
+  "type": "object",
+  "required": ["channel_id", "channel_secret"],
+  "additionalProperties": false,
+  "properties": {
+    "channel_id": {
+      "description": "チャンネルID",
+      "type": "string"
+    },
+    "channel_secret": {
+      "description": "チャンネルシークレット",
+      "type": "string"
+    }
+  }
+}

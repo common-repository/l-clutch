@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "rich menu response",
+  "description": "リッチメニューレスポンス",
+  "allOf": [{ "$ref": "row-response-base.json" }, { "$ref": "../rich-menu/rich-menu-base.json" }],
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {},
+    "status": {},
+    "created_at": {},
+    "updated_at": {},
+    "rich_menu_id": {},
+    "rich_menu_alias_id": {},
+    "selected": {},
+    "name": {},
+    "chat_bar_text": {},
+    "size": {
+      "description": "リッチメニューのサイズ",
+      "$ref": "../rich-menu/rich-menu-size.json"
+    },
+    "areas": {
+      "type": "array",
+      "description": "リッチメニューエリアの配列",
+      "maxItems": 20,
+      "items": {
+        "$ref": "../rich-menu/rich-menu-area.json"
+      }
+    },
+    "background": {
+      "description": "リッチメニューの背景画像",
+      "$ref": "../image.json"
+    }
+  }
+}

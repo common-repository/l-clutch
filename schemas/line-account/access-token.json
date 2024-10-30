@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "access token",
+  "type": "object",
+  "required": ["access_token"],
+  "additionalProperties": false,
+  "properties": {
+    "access_token": {
+      "type": "string",
+      "description": "アクセストークン",
+      "minLength": 1
+    },
+    "client_id": {
+      "type": "string",
+      "description": "クライアントID"
+    },
+    "expires_in": {
+      "type": "integer",
+      "description": "有効期限"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.wp-block-l-clutch-logout-button {
+  display: flex;
+
+  &.is-content-justification {
+    &-center {
+      justify-content: center;
+    }
+    &-left {
+      justify-content: left;
+    }
+    &-right {
+      justify-content: right;
+    }
+  }
+}

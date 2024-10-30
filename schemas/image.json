@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "image",
+  "type": "object",
+  "required": ["id", "url", "thumbnail_url", "width", "height", "file_size"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "ID",
+      "$pragma": {
+        "cast": "integer"
+      }
+    },
+    "url": {
+      "type": "string",
+      "description": "URL"
+    },
+    "thumbnail_url": {
+      "type": "string",
+      "description": "サムネイルURL"
+    },
+    "width": {
+      "type": "integer",
+      "description": "幅"
+    },
+    "height": {
+      "type": "integer",
+      "description": "高さ"
+    },
+    "file_size": {
+      "type": "integer",
+      "description": "ファイルサイズ"
+    }
+  }
+}

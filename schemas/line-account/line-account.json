@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "line account",
+  "description": "LINEアカウント",
+  "type": "object",
+  "required": ["user_id", "display_name"],
+  "additionalProperties": false,
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "description": "ユーザーID",
+      "minLength": 1
+    },
+    "display_name": {
+      "type": "string",
+      "description": "表示名"
+    },
+    "picture_url": {
+      "type": "string",
+      "description": "プロフィール画像のURL"
+    },
+    "status_message": {
+      "type": "string",
+      "description": "ステータスメッセージ"
+    },
+    "language": {
+      "type": "string",
+      "description": "言語"
+    },
+    "email": {
+      "type": "string",
+      "description": "メールアドレス"
+    },
+    "friend_flag": {
+      "type": "boolean",
+      "description": "友達かどうか"
+    }
+  }
+}

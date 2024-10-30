@@ -1,0 +1,55 @@
+$basic-color: #06c755;
+
+.wp-block-l-clutch-add-friend-button {
+  display: flex;
+
+  &.is-content-justification {
+    &-center {
+      justify-content: center;
+    }
+    &-left {
+      justify-content: left;
+    }
+    &-right {
+      justify-content: right;
+    }
+  }
+
+  &.alignfull {
+    padding-left: var(--wp--style--root--padding-right);
+    padding-right: var(--wp--style--root--padding-left);
+  }
+
+  .image-button,
+  .text-button {
+    cursor: pointer;
+    width: fit-content;
+    border: none;
+    text-decoration: none;
+  }
+
+  .image-button {
+    padding: 0;
+  }
+
+  .image {
+    display: block;
+  }
+
+  .text-button {
+    background-color: $basic-color;
+    border-radius: 10px;
+    padding: 1em 2em;
+    line-height: 1;
+  }
+
+  .text {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+  }
+
+  a:not([href]) {
+    opacity: 0.5;
+  }
+}

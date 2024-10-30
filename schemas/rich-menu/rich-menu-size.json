@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "rich menu size",
+  "description": "リッチメニューのサイズ",
+  "type": "object",
+  "required": ["width", "height"],
+  "additionalProperties": false,
+  "properties": {
+    "width": {
+      "type": "integer",
+      "description": "幅",
+      "minimum": 800,
+      "maximum": 2500
+    },
+    "height": {
+      "type": "integer",
+      "description": "高さ",
+      "minimum": 250
+    }
+  }
+}

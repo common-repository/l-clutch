@@ -1,0 +1,56 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "l-clutch/logout-button",
+  "version": "0.1.0",
+  "title": "LINEログアウトボタン",
+  "category": "l-clutch",
+  "description": "ログアウトを実行するボタンです。ログインしていない場合は表示されません。",
+  "attributes": {
+    "text": {
+      "type": "string",
+      "default": "ログアウト",
+      "source": "html",
+      "selector": "a"
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "color": {
+      "gradients": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    },
+    "shadow": true,
+    "spacing": {
+      "padding": ["horizontal", "vertical"],
+      "margin": ["top", "bottom"]
+    },
+    "layout": {
+      "allowOrientation": false,
+      "allowVerticalAlignment": false,
+      "allowSwitching": false,
+      "allowInheriting": false,
+      "default": {
+        "type": "flex",
+        "justifyContent": "center"
+      }
+    }
+  },
+  "styles": [
+    { "name": "fill", "label": "Fill" },
+    { "name": "outline", "label": "Outline", "isDefault": true }
+  ],
+  "example": {
+    "attributes": {
+      "text": "ログアウト"
+    }
+  },
+  "textdomain": "l-clutch",
+  "editorScript": "file:./index.js",
+  "editorStyle": ["l-clutch-block-editor"],
+  "style": ["file:./style-index.css", "wp-block-button"],
+  "render": "file:./render.php"
+}

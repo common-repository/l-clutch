@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "postback action",
+  "description": "ポストバックアクション",
+  "type": "object",
+  "allOf": [{ "$ref": "line-action-base.json" }],
+  "required": ["data"],
+  "properties": {
+    "data": {
+      "type": "string",
+      "description": "アクションに付加するデータ"
+    },
+    "display_text": {
+      "type": "string",
+      "description": "アクション実行時に送信されるテキスト"
+    },
+    "input_option": {
+      "type": "string",
+      "enum": ["closeRichMenu", "openRichMenu", "openKeyboard", "openVoice"],
+      "description": "アクションに応じた、リッチメニューなどの表示方法"
+    },
+    "fill_in_text": {
+      "type": "string",
+      "description": "キーボードを開いたときに、入力欄にあらかじめ入力しておく文字列"
+    }
+  }
+}

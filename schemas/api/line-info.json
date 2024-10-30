@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "line info",
+  "type": "object",
+  "allOf": [{ "$ref": "../line-account/line-account.json" }],
+  "properties": {
+    "is_blocked": {
+      "description": "ブロックされているか",
+      "type": "boolean"
+    },
+    "logged_in_at": {
+      "description": "最後にログインした日時",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

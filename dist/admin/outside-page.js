@@ -1,0 +1,1 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(function(){document.querySelectorAll("#toplevel_page_l-clutch > ul.wp-submenu > li").forEach((e=>{const t=e.querySelector("a");t&&t.querySelector("span[data-external]")&&(t.target="_blank",t.rel="noopener noreferrer")}))}))})();

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "bot info",
+  "description": "ボット情報",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "basic_id": {
+      "type": "string",
+      "description": "ボットのベーシックID"
+    }
+  }
+}

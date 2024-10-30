@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "l-clutch/profile-picture",
+  "version": "0.1.0",
+  "title": "プロフィール画像",
+  "category": "l-clutch",
+  "textdomain": "l-clutch",
+  "description": "ログイン中のアカウントのプロフィール画像を表示します。",
+  "attributes": {
+    "width": {
+      "type": "string",
+      "default": "100px"
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "shadow": true,
+    "spacing": {
+      "margin": true
+    },
+    "layout": {
+      "allowOrientation": false,
+      "allowVerticalAlignment": false,
+      "allowSwitching": false,
+      "allowInheriting": false,
+      "default": {
+        "type": "flex",
+        "justifyContent": "center"
+      }
+    }
+  },
+  "styles": [
+    { "name": "rounded", "label": "丸", "isDefault": true },
+    { "name": "square", "label": "四角" }
+  ],
+  "example": {},
+  "editorScript": "file:./index.js",
+  "editorStyle": ["l-clutch-block-editor", "wp-block-avatar-editor"],
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

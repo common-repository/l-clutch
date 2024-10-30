@@ -1,0 +1,1 @@
+<?php return array('dependencies' => array('l-clutch-block-editor', 'l-clutch-core', 'react', 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-core-data', 'wp-data', 'wp-primitives'), 'version' => 'f3c6468ff8122bbd5824');
